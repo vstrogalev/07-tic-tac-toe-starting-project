@@ -1,17 +1,19 @@
+import './gameBoard.css';
+
 export default function GameBoard({ onSelectedCell, board }) {
   return (
-    <ol id="game-board">
+    <ul id="game-board">
       {board.map((row, rowIndex) => (
-        <li key={rowIndex}>
-          <ol>
+        <li className="gameBoard__row_container" key={rowIndex}>
+          <ul className="gameBoard__row">
             {row.map((cell, colIndex) => (
-              <li key={colIndex}>
-                <button onClick={(event) => onSelectedCell(rowIndex, colIndex, event)} disabled={cell}>{cell}</button>
+              <li className="gameBoard__col" key={colIndex}>
+                <button className="gameBoard__button" onClick={(event) => onSelectedCell(rowIndex, colIndex, event)} disabled={cell}>{cell}</button>
               </li>
             ))}
-          </ol>
+          </ul>
         </li>
       ))}
-    </ol>
+    </ul>
   );
 }

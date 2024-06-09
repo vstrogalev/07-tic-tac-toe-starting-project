@@ -1,0 +1,39 @@
+#game-board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 3rem 0;
+  padding: 0;
+  flex-direction: column;
+}
+
+.gameBoard__row_container {
+  flex-grow: 1;
+}
+
+.gameBoard__row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 0 auto;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.gameBoard__col {
+  /* width: 28%; */
+}
+
+.gameBoard__button {
+  width: clamp(3rem, 2.0769rem + 4.1026vw, 7rem);
+  aspect-ratio: 1/1;
+  border: none;
+  background: #aca788;
+  color: #3f3b00;
+  font-size: clamp(0.5rem, -1.8058rem + 9.8382vw, 10rem);;
+  cursor: pointer;
+  font-family: 'Caprasimo', cursive;
+  padding: 1rem;
+}
