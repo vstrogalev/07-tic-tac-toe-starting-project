@@ -23,7 +23,7 @@ export default function Player({ onChangePlayerName, initialName, symbol, isActi
         {isEditing && <input type="text" required value={playerName} onChange={handleChangePlayerName}/>}
         <span className="player-symbol">{symbol}</span>
       </span>
-      <button onClick={handleClick}>{isEditing ? 'Save' : 'Edit'}</button>
+      {symbol === 'X' && <button onClick={handleClick}>{isEditing ? 'Save' : 'Edit'}</button>}
     </li>
   );
 }

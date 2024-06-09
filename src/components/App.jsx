@@ -13,8 +13,8 @@ const INITIAL_GAME_BOARD = [
 ];
 
 const PLAYERS = {
-  X: "Player 1",
-  O: "Player 2",
+  X: "Player",
+  O: "Bot",
 };
 
 function deriveActivePlayerSymbol(turns) {

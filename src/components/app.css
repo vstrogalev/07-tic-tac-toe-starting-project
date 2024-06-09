@@ -39,7 +39,6 @@
 #players li {
   display: flex;
   align-items: center;
-  /* width: 50%; */
   border: 2px solid transparent;
 }
 
@@ -54,14 +53,12 @@
 }
 
 #players button {
-  width: clamp(1rem, 0.5385rem + 2.0513vw, 3rem);
   border: none;
   background: none;
   color: #c3ba78;
-  font-size: clamp(0.5rem, 0.1385rem + 0.7179vw, 1rem);
+  font-size: clamp(1rem, 0.1385rem + 0.7179vw, 2rem);
   cursor: pointer;
   transition: color 0.2s;
-  /* padding: 0.5rem 0.25rem 0.25rem 0.25rem; */
   text-align: center;
 }
 
